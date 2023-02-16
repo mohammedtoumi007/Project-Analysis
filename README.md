@@ -55,6 +55,7 @@ Below is a screenshot of the data model after cleansed and prepared tables were 
 
 We can see that the FACT table is connected to two dimension tables with the correct relationship established (1 to *) between dimension and fact tables.
 
+![data model](https://user-images.githubusercontent.com/55878755/219376713-dd3aa487-53bb-4e78-bdcb-4953f1ae16b0.png)
 
 
 ## Calculations : DAX
