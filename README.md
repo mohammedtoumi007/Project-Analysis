@@ -29,7 +29,7 @@ B - DIM_Activity :
 
 DIM_Activity describes two different types of activities: Walking and running. On some days walking was chosen as a preferred activity time, and other days running were performed. Some minor data issues in this table was later cleaned up and corrected.
 
-
+![dim 1](https://user-images.githubusercontent.com/55878755/219372764-54f89977-b2c4-4dac-8464-a34c10cb84f8.png)
 
 Following steps were done in Power BI to transform this table to be ready for analysis purposes:
 
