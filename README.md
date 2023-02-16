@@ -48,6 +48,8 @@ Promoted row so that the data so that the first row was used.
 Changed the column to DateType
 Inserted several new columns based on the date.
 
+![power query3](https://user-images.githubusercontent.com/55878755/219376443-73e86826-1461-48c8-94ee-1f396e97c01a.png)
+
 ## Data Model
 Below is a screenshot of the data model after cleansed and prepared tables were read into Power BI.
 
