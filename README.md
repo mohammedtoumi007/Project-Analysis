@@ -63,129 +63,37 @@ The following calculations were created in the Power BI reports using DAX (Data 
 
 Average Steps – This is a simple AVERAGE function around the Steps column:
 
-AVERAGE( FACT_Activity[Steps] )
+![d1](https://user-images.githubusercontent.com/55878755/219378700-b9c80f75-809d-4d52-bbb7-6593fcefcf2e.png)
 
 Total Steps – This is a simple SUM function around the Steps column:
 
-SUM( FACT_Activity[Steps] )
+![d2](https://user-images.githubusercontent.com/55878755/219378771-9318e2a2-2d54-4113-a02c-21062b4baea5.png)
 
 Steps (Running) – This is a calculation to isolate the Total Steps measure by filtering it by the “Running Activity”:
 
-
-
-CALCULATE(
-
-[Total Steps],
-
-DIM_Activity[ActivityName] = “Running”
-
-)
+![d3](https://user-images.githubusercontent.com/55878755/219378837-5945bc3d-a958-49ce-b144-6fcf888ae611.png)
 
 Steps (Walking) – This is a calculation to isolate the Total Steps measure by filtering it by the “Walking Activity”:
 
-
-
-CALCULATE(
-
-[Total Steps],
-
-DIM_Activity[ActivityName] = “Walking”
-
-)
+![d4](https://user-images.githubusercontent.com/55878755/219378825-ad34f794-aa52-4a86-a072-43a3cd34f0bd.png)
 
 Running % of Total – Here we are using two measures from before to find the % of steps that were done by running:
 
-
-
-DIVIDE(
-
-[Steps (Running)],
-
-[Total Steps]
-
-)
+![d5](https://user-images.githubusercontent.com/55878755/219378828-e6df4a69-2d80-432d-aab3-3d3a41835a8e.png)
 
 Walking % of Total – Here we are using two measures from before to find the % of steps that were done by walking:
 
-
-
-DIVIDE(
-
-[Steps (Walking)],
-
-[Total Steps]
-
-)
+![d6](https://user-images.githubusercontent.com/55878755/219378832-27a696c5-0f61-44d2-b89e-5658391ff3e9.png)
 
 Total Steps (Cumulative) – Here we are re-using the Total Steps measure and using different functions to cumulatively calculate the total steps:
 
+![d7](https://user-images.githubusercontent.com/55878755/219378833-dc22be9d-2f7b-472f-a20d-2284ddfd2ef1.png)
 
-
-CALCULATE(
-
-[Total Steps],
-
-FILTER(
-
-ALLSELECTED( DIM_Date ),
-
-DIM_Date[Date]
-
-<= MAX( FACT_Activity[Date] )
-
-)
-
-)
 
 Week Over Week % Change Steps – Here we are using the Total Steps measure and using different functions, with variables, to calculate the Week over Week % Change of Steps:
 
+![d8](https://user-images.githubusercontent.com/55878755/219378835-4c290cd8-1ef8-4d44-81a4-2c45f5111e05.png)
 
-
-VAR CurrentWeek =
-
-CALCULATE(
-
-[Total Steps],
-
-FILTER(
-
-ALL( DIM_Date ),
-
-DIM_Date[Week of Year]
-
-= SELECTEDVALUE( DIM_Date[Week of Year] )
-
-)
-
-)
-
-VAR PreviousWeek =
-
-CALCULATE(
-
-[Total Steps],
-
-FILTER(
-
-ALL( DIM_Date ),
-
-DIM_Date[Week of Year]
-
-= SELECTEDVALUE( DIM_Date[Week of Year] ) – 1
-
-)
-
-)
-
-RETURN
-
-DIVIDE(
-
-( CurrentWeek – PreviousWeek ),
-
-PreviousWeek
-
-)
 
 ## Analysis Dashboard
 The finish report consists of two different dashboards. One is more of a basic version, while the second version contains more advanced visualizations. To enable these visualizations the calculation language DAX (Data Analysis Expressions) were used.
