@@ -35,9 +35,9 @@ Following steps were done in Power BI to transform this table to be ready for an
 
 ![power query2](https://user-images.githubusercontent.com/55878755/219375823-845418ba-49a0-42b1-a575-5ed59c846764.png)
 
-  ###1-Promoted row so that the data so that the first row was used.
-  ###2-Renamed necessary columns to give better business friendly names.
-  ###3-Capitalized each for in the description column for improved data quality.
+  1-Promoted row so that the data so that the first row was used.
+  2-Renamed necessary columns to give better business friendly names.
+  3-Capitalized each for in the description column for improved data quality.
 
 
 C- DIM_Date :
