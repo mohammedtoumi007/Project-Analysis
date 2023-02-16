@@ -97,3 +97,5 @@ Week Over Week % Change Steps – Here we are using the Total Steps measure and 
 
 ## Analysis Dashboard
 The finish report consists of two different dashboards. One is more of a basic version, while the second version contains more advanced visualizations. To enable these visualizations the calculation language DAX (Data Analysis Expressions) were used.
+
+Link Dashboard : https://www.novypro.com/project/project-1
