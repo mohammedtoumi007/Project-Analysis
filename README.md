@@ -14,7 +14,7 @@ A - FACT_ Exercise :
 
 Exercise data were recorded every single date and the focus was on amount of steps. The date column is used to connect to the date dimension and Activity_FK is used to connect to the activity dimension.
 
-
+![fact](https://user-images.githubusercontent.com/55878755/219371890-49ca639f-0245-4554-b04e-8b4a526922f6.png)
 
 Following steps were done in Power BI to transform this table to be ready for analysis purposes:
 
