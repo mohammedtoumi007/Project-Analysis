@@ -18,11 +18,11 @@ Exercise data were recorded every single date and the focus was on amount of ste
 
 Following steps were done in Power BI to transform this table to be ready for analysis purposes:
 
-1-Promoted row so that the data so that the first row was used as headers.
-2-Removed unnecessary columns.
-3-Changed column to have the correct type (date, numbers etc.) for later use in calculations.
+  1-Promoted row so that the data so that the first row was used as headers.
+  2-Removed unnecessary columns.
+  3-Changed column to have the correct type (date, numbers etc.) for later use in calculations.
 
-
+![power query](https://user-images.githubusercontent.com/55878755/219372437-152a8988-ff33-4bc2-b61e-6837950ec82b.png)
 
 
 B - DIM_Activity :
